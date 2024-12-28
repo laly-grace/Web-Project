@@ -22,6 +22,10 @@ var displayCarModelEl = document.getElementById("display-carmodel");
 var displayDurationEl = document.getElementById("display-duration");
 var displayPaymentEl = document.getElementById("display-payment");
 var displayDateEl = document.getElementById("display-date");
+var registrationEl = document.getElementById("registration");
+var displayEl = document.getElementById("display");
+displayEl.setAttribute('class','hide');
+
 
 
 function submitter(){
@@ -33,6 +37,7 @@ function submitter(){
     user[0].email = emailEl.value;
     user[0].password = passwordEl.value;
     user[0].phone = phoneEl.value;
+    alert("Dear Customer You have been Succesfully Registered!")
 }
 
 function display(){
@@ -48,7 +53,9 @@ function display(){
 
 
 submitEl.addEventListener('click',function(){
+    registrationEl.setAttribute('class','hide');
     submitter();
+    displayEl.removeAttribute('class','hide');
     display();
 });
 

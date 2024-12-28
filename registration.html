@@ -10,7 +10,7 @@
 <body>
     
 
-    <div class="container">
+    <div class="container " id="registration">
         <h1>Register</h1>
         <form action="/submit_registration" method="post">
             <div class="form-group">
@@ -60,45 +60,45 @@
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
             </div>
             <div class="form-group">
-                <button type="submit" id="submit">Register</button>
+                <button type="button" id="submit">Register</button>
             </div>
         </form>
     </div>
 
 
-
-    <div class="container">
-        <h1>Registration Information</h1>
-        <div class="info-group">
-            <label>Full Name:</label>
-            <span id="display-fullname"></span>
+    <section id="display">
+        <div class="container">
+            <h1>Registration Information</h1>
+            <div class="info-group">
+                <label>Full Name:</label>
+                <span id="display-fullname"></span>
+            </div>
+            <div class="info-group">
+                <label>Owner Name:</label>
+                <span id="display-ownername"></span>
+            </div>
+            <div class="info-group">
+                <label>Car Name:</label>
+                <span id="display-carname"></span>
+            </div>
+            <div class="info-group">
+                <label>Car Model:</label>
+                <span id="display-carmodel"></span>
+            </div>
+            <div class="info-group">
+                <label>Duration of Parking:</label>
+                <span id="display-duration"></span>
+            </div>
+            <div class="info-group">
+                <label>Telebirr/CBE Number:</label>
+                <span id="display-payment"></span>
+            </div>
+            <div class="info-group">
+                <label>Date of Issue:</label>
+                <span id="display-date"></span>
+            </div>
         </div>
-        <div class="info-group">
-            <label>Owner Name:</label>
-            <span id="display-ownername"></span>
-        </div>
-        <div class="info-group">
-            <label>Car Name:</label>
-            <span id="display-carname"></span>
-        </div>
-        <div class="info-group">
-            <label>Car Model:</label>
-            <span id="display-carmodel"></span>
-        </div>
-        <div class="info-group">
-            <label>Duration of Parking:</label>
-            <span id="display-duration"></span>
-        </div>
-        <div class="info-group">
-            <label>Telebirr/CBE Number:</label>
-            <span id="display-payment"></span>
-        </div>
-        <div class="info-group">
-            <label>Date of Issue:</label>
-            <span id="display-date"></span>
-        </div>
-    </div>
-
+    </section>
     <script src="index.js"></script>
 </body>
 </html>
