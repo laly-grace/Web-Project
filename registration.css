@@ -151,3 +151,11 @@ body {
     color: #333;
     text-align: right;
 }
+
+.hide{
+    display: none;
+}
+
+/* .hidden{
+    display: none;
+} */
