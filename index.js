@@ -24,7 +24,9 @@ var displayPaymentEl = document.getElementById("display-payment");
 var displayDateEl = document.getElementById("display-date");
 var registrationEl = document.getElementById("registration");
 var displayEl = document.getElementById("display");
+registrationEl.setAttribute('class','hide');
 displayEl.setAttribute('class','hide');
+
 
 
 
@@ -59,4 +61,10 @@ submitEl.addEventListener('click',function(){
     display();
 });
 
+var signupbtn = document.getElementById("signupbtn");
+var loginEl = document.getElementById("loginSection");
 
+signupbtn.addEventListener('click',function(){
+    loginEl.setAttribute('class','hide');
+    registrationEl.removeAttribute('class','hide');
+});
