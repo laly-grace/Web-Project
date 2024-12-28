@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Park Reservation & Ticketing System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2575fc;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .form-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .form-container h3 {
+            font-size: 1.8rem;
+            color: #2575fc;
+            margin-bottom: 10px;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            background: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .form-container button:hover {
+            background: #6a11cb;
+        }
+
+        .map-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Reach out to us through the form below or locate us on the map.</p>
+    </div>
+
+    <div class="content">
+        <h2>Get In Touch</h2>
+        <div class="contact-form">
+            <div class="form-container">
+                <h3>Contact Form</h3>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094203!2d144.95373531531665!3d-37.81627977975162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f7f86e6d24e!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1614149993439!5m2!1sen!2sau"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Park Reservation & Ticketing System. All rights reserved.</p>
+    </div>
+</body>
+</html>

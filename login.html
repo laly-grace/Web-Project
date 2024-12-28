@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        background: linear-gradient(120deg, #00695c, #004d40);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .form-container {
+        background: #ffffff;
+        color: #333;
+        padding: 40px 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        max-width: 90%;
+      }
+
+      .form-container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: #00695c;
+      }
+
+      .form-container form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .form-container label {
+        font-size: 1rem;
+        margin-bottom: 5px;
+      }
+
+      .form-container input {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s;
+      }
+
+      .form-container input:focus {
+        border-color: #00695c;
+      }
+
+      .form-container button {
+        padding: 10px;
+        font-size: 1rem;
+        background: #00695c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .form-container button:hover {
+        background: #004d40;
+      }
+
+      .form-container .toggle-link {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #00695c;
+      }
+
+      .form-container .toggle-link a {
+        color: #004d40;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .form-container .toggle-link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container" id="login-form">
+      <h1>Login</h1>
+      <form action="user.html">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <button type="submit">Login</button>
+      </form>
+      <div class="toggle-link">
+        <p>Don't have an account? <a href="registration.html">Sign up</a></p>
+      </div>
+    </div>
+  </body>
+</html>

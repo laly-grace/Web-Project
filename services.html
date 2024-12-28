@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Park Reservation & Ticketing System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+        }
+
+        .service {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease;
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 20px;
+        }
+
+        .service-content h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .service-content p {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #ddd;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Our Services</h1>
+        <p>
+            Discover top-notch parking and ticketing services tailored just for you!
+        </p>
+        </div>
+
+        <div class="services">
+        <div class="service">
+            <img src="images/parkingSlots.jpg" alt="Parking slots" />
+            <div class="service-content">
+            <h2>Spacious Parking Slots</h2>
+            <p>
+                Enjoy secure and well-organized parking slots suitable for all
+                vehicle types.
+            </p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img
+            src="images/space_available_and_end_of_aisle.jpg"
+            alt="Car valet services"
+            />
+            <div class="service-content">
+            <h2>Car Valet Services</h2>
+            <p>
+                Relax while our professional valets handle your car with utmost
+                care.
+            </p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="images/ticket.jpg" alt="Online ticketing" />
+            <div class="service-content">
+            <h2>Online Ticketing</h2>
+            <p>
+                Book your parking spot in advance through our seamless online
+                system.
+            </p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="images/24.jpeg" alt="24/7 Support" />
+            <div class="service-content">
+            <h2>24/7 Customer Support</h2>
+            <p>
+                Our team is always available to assist you, anytime and anywhere.
+            </p>
+            </div>
+        </div>
+        </div>
+</body>
+</html>

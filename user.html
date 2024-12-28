@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Registration Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .info-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .info-group label {
+            font-weight: bold;
+            flex: 1;
+            text-align: left;
+        }
+
+        .info-group span {
+            flex: 2;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            color: #333;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Information</h1>
+        <div class="info-group">
+            <label>Full Name:</label>
+            <span id="display-fullname">John Doe</span>
+        </div>
+        <div class="info-group">
+            <label>Owner Name:</label>
+            <span id="display-ownername">Jane Doe</span>
+        </div>
+        <div class="info-group">
+            <label>Car Name:</label>
+            <span id="display-carname">Toyota Corolla</span>
+        </div>
+        <div class="info-group">
+            <label>Car Model:</label>
+            <span id="display-carmodel">2022</span>
+        </div>
+        <div class="info-group">
+            <label>Duration of Parking:</label>
+            <span id="display-duration">2 hours</span>
+        </div>
+        <div class="info-group">
+            <label>Debit/Credit Card Number:</label>
+            <span id="display-payment">**** **** **** 1234</span>
+        </div>
+        <div class="info-group">
+            <label>Other Payment Options:</label>
+            <span id="display-optionalpayment">Telebirr</span>
+        </div>
+        <div class="info-group">
+            <label>Date of Issue:</label>
+            <span id="display-date">2024-12-27</span>
+        </div>
+    </div>
+</body>
+</html>

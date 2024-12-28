@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Register</h1>
+        <form action="/submit_registration" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="ownername">Owner Name:</label>
+                <input type="text" id="ownername" name="ownername" placeholder="Enter owner name" required>
+            </div>
+            <div class="form-group">
+                <label for="carname">Car Name:</label>
+                <input type="text" id="carname" name="carname" placeholder="Enter car name" required>
+            </div>
+            <div class="form-group">
+                <label for="carmodel">Car Model:</label>
+                <input type="text" id="carmodel" name="carmodel" placeholder="Enter car model" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration of Parking:</label>
+                <select id="duration" name="duration" required>
+                    <option value="30min">30 minutes</option>
+                    <option value="1hour">1 hour</option>
+                    <option value="2hours">2 hours</option>
+                    <option value="3hours">3 hours</option>
+                    <option value="24hours">24 hours</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="optionalpayment">Telebirr or CBE Number:</label>
+                <input type="text" id="paymentNo" name="optionalpayment" placeholder="Telebirr, CBE Birr">
+            </div>
+            <div class="form-group">
+                <label for="date">Date of Issue:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="container">
+        <h1>Registration Information</h1>
+        <div class="info-group">
+            <label>Full Name:</label>
+            <span id="display-fullname"></span>
+        </div>
+        <div class="info-group">
+            <label>Owner Name:</label>
+            <span id="display-ownername"></span>
+        </div>
+        <div class="info-group">
+            <label>Car Name:</label>
+            <span id="display-carname"></span>
+        </div>
+        <div class="info-group">
+            <label>Car Model:</label>
+            <span id="display-carmodel"></span>
+        </div>
+        <div class="info-group">
+            <label>Duration of Parking:</label>
+            <span id="display-duration"></span>
+        </div>
+        <div class="info-group">
+            <label>Telebirr/CBE Number:</label>
+            <span id="display-payment"></span>
+        </div>
+        <div class="info-group">
+            <label>Date of Issue:</label>
+            <span id="display-date"></span>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

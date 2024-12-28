@@ -1,0 +1,42 @@
+body {
+  display: block;
+  background-color: gray;
+  height: ;
+}
+
+.loginSection {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+header button {
+  font-size: 14pt;
+  border: solid 5px inset;
+  border-radius: 10px;
+  background-color: yellow;
+}
+
+.iframe-container {
+  width: 100%;
+  height: fit-content;
+  display: inline;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 0.9em;
+}
+
+iframe {
+    height: 500px;
+    width: 100%;
+    border: none;
+   
+}
+
+
+
